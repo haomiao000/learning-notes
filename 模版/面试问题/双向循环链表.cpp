@@ -76,6 +76,13 @@ public:
         } while (current != head);
         std::cout << std::endl;
     }
+    ~CircularDoublyLinkedList() {
+        auto tmp = this->head;
+        while(this->head != nullptr) {
+            tmp = this->head;
+            head = head->next;
+        }
+    }
 };
 
 int main() {

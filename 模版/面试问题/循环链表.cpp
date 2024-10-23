@@ -78,6 +78,13 @@ public:
         } while (tmp != head);
         cout << endl;
     }
+    ~CircleList() {
+        auto tmp = this->head;
+        while(this->head != nullptr) {
+            tmp = this->head;
+            head = head->next;
+        }
+    }
 };
 
 signed main() {

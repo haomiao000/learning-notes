@@ -70,11 +70,10 @@ public:
     }
     ~LinkList() {
         ListNode *tmp = head;
-        while(tmp != nullptr) {
+        while(head != nullptr) {
             tmp = head;
             head = head->next;
             delete tmp;
-            tmp = nullptr;
         }
     }
 };
