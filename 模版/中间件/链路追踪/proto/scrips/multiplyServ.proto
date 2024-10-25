@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "/MultiplyServ";
+
+service MultiplyService {
+    rpc Multiply (MultiplyRequest) returns (MultiplyResponse);
+}
+
+message MultiplyRequest {
+    int32 a = 1;
+    int32 b = 2;
+}
+
+message MultiplyResponse {
+    int32 result = 1;
+}
