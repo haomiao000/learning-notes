@@ -84,9 +84,6 @@ signed main() {
     list.insert(4);
     list.insert(5);
     list.print();
-    list.reverse(2);
-    list.print();
-    list.insert(2);
     list.reverse(3);
     list.print();
     return 0;

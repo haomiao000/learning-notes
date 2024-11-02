@@ -17,7 +17,7 @@ void Merge(int x , int y)
 	fa[get(x)]=get(y);
 }
 signed main()
-{  
+{
 	
 	
 	return 0;
